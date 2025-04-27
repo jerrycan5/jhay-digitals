@@ -5,8 +5,8 @@
   :root {
     /* Light Mode Variables */
     --background: #ffffff;
-    --foreground: #1f2937; /* text-gray-800 */
-    --primary: #4f46e5; /* indigo-600 */
+    --foreground: #242a31; /* text-gray-800 */
+    --primary: #28273b; /* indigo-600 */
     --secondary: #6366f1; /* indigo-500 */
     --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft black shadow */
   }
