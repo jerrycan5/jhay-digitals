@@ -1,4 +1,4 @@
 git add .
-git commit -m "input mobile sidebar"
+git commit -m "added the about section"
 git push origin main
 
