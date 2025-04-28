@@ -1,5 +1,6 @@
 import React from 'react';
 import me from '../assets/me.jpeg'; // Ensure you have an image in this path
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -39,14 +40,13 @@ function About() {
                 </p>
     
                 <div className="mt-6">
-                  <a
-                    href="#contact"
+                  <Link to="/contact"
                     className="inline-block bg-[var(--primary)] hover:bg-[var(--secondary)] text-white px-6 py-3 rounded-lg shadow transition-colors duration-300"
                     data-aos="zoom-in"
                     data-aos-delay="200"
                   >
                     Let's Work Together 🚀
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

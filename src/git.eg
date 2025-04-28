@@ -1,4 +1,4 @@
 git add .
-git commit -m "added image in the about section"
+git commit -m "update the about button"
 git push origin main
 
