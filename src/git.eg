@@ -1,4 +1,4 @@
 git add .
-git commit -m "update the about button"
+git commit -m "update the sugnup button"
 git push origin main
 
