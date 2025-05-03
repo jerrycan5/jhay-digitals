@@ -1,40 +1,67 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// import MainLayout from './layout/MainLayout'
+// import React from 'react'
+// import HeroSection from './Component/HeroSection'
+// import Features from './Component/Features'
+// import Statistics from './Component/Statistics'
 
 
-import Home from './page/Home';
-import MainLayout from './layout/MainLayout';
-import About from './page/About';
-import Contact from './page/Contact';
-import Portfolio from './page/Porfolio/Portfolio';
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<MainLayout />}>
+//           <Route index element={
+//             <>
+//               <HeroSection />
+//               <Features />
+//               <Statistics/>
+//               <Broad/>
+//             </>
+//           } />
+//         </Route>
+//       </Routes>
+//     </Router>
+//   )
+// }
+
+// export default App
+
+
+
+
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import MainLayout from './layout/MainLayout'
+import Home from './page/Home'
+import Signup from './page/Signup'
+import SignIn from './page/signin'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
     children: [
-      {  index:true, element: <Home />},
-     
       {
-        path: 'about',
-        element: <About />,
+        index: true,
+        element: <Home/>,
+      },
+
+      {
+        path:'/signup',
+        element: <Signup/>,
       },
       {
-        path: 'contact',
-        element: <Contact />,
+        path:'/signin',
+        element: <SignIn/>,
       },
-      {
-        path: 'portfolio',
-        element: <Portfolio />,
-      },
+      // add more routes here
     ],
   },
-
-
-]);
+])
 
 function App() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} />
 }
 
-export default App;
+export default App

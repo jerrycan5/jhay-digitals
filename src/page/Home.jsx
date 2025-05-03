@@ -1,15 +1,21 @@
 import React from 'react'
-import Hero from '../Component/Hero'
+import HeroSection from '../Component/HeroSection'
 import Features from '../Component/Features'
-import Cta from '../Component/Cta'
+import Statistics from '../Component/Statistics'
+import Broad from '../Component/Broad'
+import Footer from '../Component/Footer'
 
 function Home() {
   return (
-    <>
-    <Hero />
-    <Features />
-    <Cta/>
-    </>
+    <div>
+
+        <HeroSection/>
+        <Features/>
+        <Statistics/>
+        <Broad/>
+        <Footer/>
+
+    </div>
   )
 }
 
